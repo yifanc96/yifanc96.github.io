@@ -133,6 +133,8 @@ blockquote footer {
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
+
+
 #title {
   color: #20364c;
   margin-top: 2rem;
@@ -142,7 +144,7 @@ blockquote footer {
 }
 
 #program {
-  color: gray;
+  color: black;
   text-align: center;
 }
 
