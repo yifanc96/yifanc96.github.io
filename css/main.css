@@ -2,7 +2,7 @@
 body {
   font-size: 16px;
   /*font-family: "Open Sans", Arial, sans-serif;*/
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   background: #FFFFFF;
 }
 
@@ -21,7 +21,7 @@ body {
 /* Font style */
 .montserrat {
   /*font-family: "Montserrat", Helvetica, sans-serif !important;*/
-  font-family: "Courier New", Courier, monospace !important;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
 }
 
 /* Degree area -------------------------------------------------------------------- */
@@ -41,7 +41,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Montserrat", Helvetica, sans-serif;*/
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #20364c;
   font-weight: 500;
 }
