@@ -40,7 +40,8 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  /*font-family: "Montserrat", Helvetica, sans-serif;*/
+  font-family: "Courier New", Courier, monospace;
   color: #20364c;
   font-weight: 500;
 }
