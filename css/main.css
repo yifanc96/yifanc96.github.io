@@ -10,7 +10,7 @@ body {
 /* Colors */
 .dark-blue {
   /*color: #20364c !important;*/
-  color: #2c85dd !important;
+  color: #2180e0 !important;
 }
 
 #badge-more {
@@ -43,7 +43,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Montserrat", Helvetica, sans-serif;*/
   font-family:Georgia, serif;
-  color: #20364c;
+  color: #3277bd;
   font-weight: 500;
 }
 
@@ -72,7 +72,8 @@ h4, h5, h6 {
 
 #projects .panel-heading h5 {
   font-weight: 500;
-  color: darkslategray !important;
+  /*color: darkslategray !important;*/
+  color: rgb(72, 177, 177) !important;
 }
 
 p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
@@ -89,8 +90,8 @@ dt {
 }
 
 blockquote {
-  border-left-color: slategray;
-  color: slategray;
+  border-left-color: rgb(65, 138, 211);
+  color: rgb(22, 74, 126);
 }
 
 blockquote blockquote {
@@ -168,7 +169,7 @@ nav {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #20364c;
+  color: #2d74bb;
   font-weight: 500;
 }
 
