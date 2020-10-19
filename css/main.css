@@ -90,8 +90,8 @@ dt {
 }
 
 blockquote {
-  border-left-color: rgb(45, 71, 97);
-  color: rgb(37, 73, 109);
+  border-left-color: rgb(32, 47, 61);
+  color: slategray;
 }
 
 blockquote blockquote {
