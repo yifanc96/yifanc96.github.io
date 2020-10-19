@@ -22,7 +22,7 @@ body {
 /* Font style */
 .montserrat {
   /*font-family: "Montserrat", Helvetica, sans-serif !important;*/
-  font-family:"Times New Roman", Times, serif !important;
+  font-family:Georgia, serif !important;
 }
 
 /* Degree area -------------------------------------------------------------------- */
@@ -42,7 +42,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Montserrat", Helvetica, sans-serif;*/
-  font-family:"Times New Roman", Times, serif;
+  font-family:Georgia, serif;
   color: #20364c;
   font-weight: 500;
 }
@@ -77,9 +77,9 @@ h4, h5, h6 {
 
 p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
   /*font-size: 1.5rem;*/
-  font-size: 1.62rem;
+  font-size: 1.6rem;
   /*font-family: "Montserrat", Helvetica, sans-serif;*/
-  font-family:"Times New Roman", Times, serif;
+  font-family: Georgia, serif;
   /*font-weight: 400;*/
   font-weight: 400;
 }
