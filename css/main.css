@@ -14,7 +14,7 @@ body {
 }
 
 #badge-more {
-  background-color: #1585cf;
+  background-color: #234a64;
   color: white;
   cursor: pointer;
 }
@@ -43,7 +43,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Montserrat", Helvetica, sans-serif;*/
   font-family:Georgia, serif;
-  color: #3277bd;
+  color: #213d58;
   font-weight: 500;
 }
 
@@ -67,7 +67,7 @@ h4, h5, h6 {
 .panel-heading h5 {
   font-style: italic;
   font-weight: 500;
-  color: #1585cf !important;
+  color: #264d68 !important;
 }
 
 #projects .panel-heading h5 {
