@@ -90,8 +90,8 @@ dt {
 }
 
 blockquote {
-  border-left-color: rgb(65, 138, 211);
-  color: rgb(22, 74, 126);
+  border-left-color: rgb(45, 71, 97);
+  color: rgb(37, 73, 109);
 }
 
 blockquote blockquote {
@@ -181,7 +181,7 @@ nav {
 .navbar-inverse .navbar-nav>li>a:focus {
   background: white !important;
   border-radius: 1px;
-  color: #20364c !important;
+  color: #2d6dad !important;
 }
 
 .navbar-default .navbar-nav>li>a:active {
