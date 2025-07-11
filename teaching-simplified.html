@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yifan Chen - Teaching</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 20px;
+    }
+    
+    .spacer-div-3 {
+      height: 30px;
+    }
+    
+    .push-down-3 {
+      margin-top: 30px;
+    }
+    
+    .gray {
+      color: #777;
+    }
+    
+    /* Collapsible panel icons */
+    .panel-heading .accordion-plus-toggle:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f068"; /* minus icon */
+      float: right;
+      color: rgba(119, 136, 153, 0.5);
+    }
+    
+    .panel-heading .accordion-plus-toggle.collapsed:before {
+      content: "\f067"; /* plus icon */
+    }
+    
+    .panel-title > a {
+      display: block;
+      text-decoration: none;
+    }
+    
+    .panel-title > a:hover {
+      text-decoration: none;
+    }
+    
+    /* Back to top button */
+    #topper {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #337ab7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 12px;
+    }
+    
+    #topper:hover {
+      background: #286090;
+      color: white;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <div class="spacer-div-3"></div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        
+        <!-- Instructor Section -->
+        <h3 class="push-down-3"><span>Instructor</span></h3>
+        <h4 class="push-down-3 gray"><em>NYU Courant</em></h4>
+
+        <div class="panel-group" id="nyu-courses">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#nyu-courses" href="#collapse-discrete">
+                  Discrete Mathematics. 2023 Fall, 2024 Spring
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-discrete" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="https://math.nyu.edu/dynamic/courses/undergrad/math-ua-120/">Course page</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#nyu-courses" href="#collapse-numerical">
+                  Numerical Analysis. 2024 Fall, 2025 Spring
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-numerical" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="https://math.nyu.edu/dynamic/courses/undergrad/math-ua-252/">Course page</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teaching Assistant Section -->
+        <h3 class="push-down-3"><span>Teaching Assistant</span></h3>
+        <h4 class="push-down-3 gray"><em>Caltech</em></h4>
+
+        <div class="panel-group" id="caltech-courses">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#caltech-courses" href="#collapse-acm109-2020">
+                  ACM 109. Mathematical Modelling. 2020 Spring
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-acm109-2020" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><b>Instructor: </b><a href="https://francahoffmann.wordpress.com">Franca Hoffmann</a></p>
+                <p><b>Course Description:</b> This course gives an overview of different mathematical tools to analyze partial differential equations encountered across mathematics, biology, physics, engineering and social science. Topics include:</p>
+                <ul>
+                  <li>Between different scales: Micro-Meso-Macro</li>
+                  <li>Agent-based models, kinetic equations and corresponding macroscopic descriptions</li>
+                  <li>Mean Field Limits and Hydrodynamic Scalings</li>
+                  <li>Derivatives and Theory of Distributions</li>
+                  <li>Transport Equations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#caltech-courses" href="#collapse-cms117">
+                  CMS 117. Probability Theory and Stochastic Processes. 2020 Fall
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-cms117" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><b>Instructor: </b><a href="http://users.cms.caltech.edu/~jtropp/">Joel A. Tropp</a></p>
+                <p><b>Course Description:</b> This course offers a rigorous introduction to probability and stochastic processes. Topics include probability measures, random variables and expectation, independence, concentration inequalities, distances between probability measures, modes of convergence, laws of large numbers and the central limit theorem, Gaussian and Poisson approximation, conditional expectation and conditional distributions, filtrations, and discrete-time martingales.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#caltech-courses" href="#collapse-acm118">
+                  ACM 118. Stochastic Processes and Regression. 2021 Winter
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-acm118" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><b>Instructor: </b><a href="http://users.cms.caltech.edu/~owhadi/">Houman Owhadi</a></p>
+                <p><b>Course Description:</b> Syllabus includes:</p>
+                <ul>
+                  <li>Gaussian vectors, processes, measures and fields</li>
+                  <li>Gaussian process regression</li>
+                  <li>Statistical numerical approximation</li>
+                  <li>Kernel methods and Reproducing Kernel Hilbert Spaces</li>
+                  <li>Kernel PCA and LDA</li>
+                  <li>Kernel mean embedding</li>
+                  <li>Branching (Galton-Watson) Processes</li>
+                  <li>Poisson (Point) Processes</li>
+                  <li>Dirichlet processes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#caltech-courses" href="#collapse-acm109-2021">
+                  ACM 109. Mathematical Modeling. 2021 Spring
+                </a>
+              </h5>
+            </div>
+            <div id="collapse-acm109-2021" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><b>Instructor: </b><a href="http://stuart.caltech.edu">Andrew Stuart</a></p>
+                <p><b>Course Description:</b> Topics include:</p>
+                <ul>
+                  <li>Tensor algebra and calculus</li>
+                  <li>Continuum Mechanics of Fluids and Solids</li>
+                  <li>Quantum Mechanics</li>
+                  <li>Molecular Dynamics</li>
+                  <li>Kinetic Theory</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back-to-top button -->
+  <a role="button" id="topper" title="Top" class="btn" href="#top">
+    <i class="fa fa-caret-up fa-2x"></i>
+  </a>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
