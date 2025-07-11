@@ -21,6 +21,35 @@
   <link rel="stylesheet" href="css/teaching-panels.css">
   
   <style>
+    /* plus glyph for showing collapsible panels */
+    .panel-heading .accordion-plus-toggle:before {
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f068";
+      float: right;
+      color: RGBA(119, 136, 153, .5);
+    }
+
+    .panel-heading .accordion-plus-toggle.collapsed:before {
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f067";
+      color: RGBA(119, 136, 153, .5);
+    }
+
+    /* sets the link to the width of the entire panel title */
+    .panel-title>a {
+      display: block;
+    }
+    
     /* Only minimal overrides needed since main.css and teaching-panels.css handle most styling */
     body {
       padding-top: 20px;
@@ -46,7 +75,10 @@
 </head>
 
 <body id="top">
-  <div class="spacer-div-3"></div>
+  <!-- navbar include -->
+  <div w3-include-html="navbar.html"></div>
+
+  <div class="spacer-div-3 hidden-xs"></div>
   
   <div class="container">
     <div class="row">
