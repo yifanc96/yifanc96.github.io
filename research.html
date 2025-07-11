@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-   <!-- Metadata for the Webpage -->
    <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Yifan Chen</title>
 
-   <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+   <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -18,7 +16,7 @@
    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -26,47 +24,39 @@
    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
 
-   <!-- Bootstrap CSS files-->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-   <!-- jQuery UI CSS (optional) -->
-   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
-   <!-- Google web fonts -->
+   <!-- Google Fonts -->
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600" rel="stylesheet">
 
-   <!-- Font Awesome Web Icons -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-   <!-- added by me for github icon-->
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
+   <!-- Academicons -->
    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
    <!-- Local styles -->
    <link rel="stylesheet" href="css/main.css">
-
 </head>
 
 <body>
-
    <!-- navbar include -->
    <div w3-include-html="navbar.html"></div>
 
-   <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+   <div class="spacer-div-3 hidden-xs"></div>
 
-   <!-- Main content    -->
+   <!-- Main content -->
    <div id="main-container" class="container">
-
       <div class="row">
          <div class="col-sm-12">
             <h1>Research</h1>
             <p>
                My research aims to develop rigorous foundations and algorithms for high-dimensional computational challenges in applied mathematics, statistics, and data science. These challenges are prevalent in fine-scale physical equations, large-scale machine learning datasets, and statistical/stochastic models with complex uncertainties.
 
-          I use probability theory and numerical analysis with multiscale, randomized algorithms and recent progresses in machine learning to formalize and explore the following directions:
+               I use probability theory and numerical analysis with multiscale, randomized algorithms and recent progresses in machine learning to formalize and explore the following directions:
             </p>
             <ul class="push-down-1">
                <li>How to understand and achieve provably efficient numerical estimation for PDEs, matrices, and probability distributions, especially in high dimensional or heterogeneous settings?</li>
@@ -82,31 +72,45 @@
             
             <p>In particular, my recent research focuses on the simulation, sampling, control, and statistical learning of high-dimensional probability distributions, with applications in scientific computing and machine learning. A core objective is to develop mathematical understanding of how dynamics of probability measures and their approximations behave in high-dimensional spaces, and how these insights can be used to systematically design probabilistic methods that automate and accelerate scientific applications. Applications I have been studying include imaging, molecular dynamics, chemistry, and forecasting.</p>
 
-            
-            <div class="panel-group" id="nyu-courses" role="tablist" aria-multiselectable="true">
+            <div class="panel-group" id="research-topics">
                <div class="panel panel-default">
-                 <div class="panel-heading" role="tab" id="heading-discrete">
+                 <div class="panel-heading">
                    <h5 class="panel-title">
-                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#nyu-courses" href="#collapse-discrete" aria-expanded="false" aria-controls="collapse-discrete">
+                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-sampling">
                        High dimensional sampling
                      </a>
                    </h5>
                  </div>
-                 <div id="collapse-discrete" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-discrete">
+                 <div id="collapse-sampling" class="panel-collapse collapse">
                    <div class="panel-body">
                      <p>xxx</p>
                    </div>
                  </div>
                </div>
+
                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="heading-numerical">
+                  <div class="panel-heading">
                     <h5 class="panel-title">
-                      <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#nyu-courses" href="#collapse-numerical" aria-expanded="false" aria-controls="collapse-numerical">
-                        Generative modeling and probabilistic inference
+                      <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-generative">
+                        Generative modeling and Bayesian inference
                       </a>
                     </h5>
                   </div>
-                  <div id="collapse-numerical" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-numerical">
+                  <div id="collapse-generative" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>xxx</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h5 class="panel-title">
+                      <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-statistical">
+                      Statistical numerical methods
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapse-statistical" class="panel-collapse collapse">
                     <div class="panel-body">
                       <p>xxx</p>
                     </div>
@@ -114,14 +118,14 @@
                 </div>
 
                <div class="panel panel-default">
-                 <div class="panel-heading" role="tab" id="heading-numerical">
+                 <div class="panel-heading">
                    <h5 class="panel-title">
-                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#nyu-courses" href="#collapse-numerical" aria-expanded="false" aria-controls="collapse-numerical">
-                     Multiscale and statistical numerical methods
+                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-multiscale">
+                     Multiscale numerical methods
                      </a>
                    </h5>
                  </div>
-                 <div id="collapse-numerical" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-numerical">
+                 <div id="collapse-multiscale" class="panel-collapse collapse">
                    <div class="panel-body">
                      <p>xxx</p>
                    </div>
@@ -132,302 +136,192 @@
             <h3 class="push-down-4"><span>Publications</span></h3>
 
             <h5>Preprints</h5>
-
             <ul class="push-down-1">
-               
-               <li><p><b> Split Gibbs Discrete Diffusion Posterior Sampling</b></br>
-                  Wenda Chu, Zihui Wu, Yifan Chen, Yang Song, Yisong Yue</br>
+               <li><p><b>Split Gibbs Discrete Diffusion Posterior Sampling</b><br>
+                  Wenda Chu, Zihui Wu, Yifan Chen, Yang Song, Yisong Yue<br>
                   Submitted, 2025. <a href="https://arxiv.org/abs/2503.01161">[arXiv]</a> <a href="https://github.com/chuwd19/Split-Gibbs-Discrete-Diffusion-Posterior-Sampling">[Code]</a>
-               </p>
-               </li>
+               </p></li>
                
-               <li><p><b> New Affine Invariant Ensemble Samplers and Their Dimensional Scaling</b></br>
-                  Yifan Chen</br>
+               <li><p><b>New Affine Invariant Ensemble Samplers and Their Dimensional Scaling</b><br>
+                  Yifan Chen<br>
                    Submitted, 2025. <a href="https://arxiv.org/abs/2505.02987">[arXiv]</a>
                   <a href="https://github.com/yifanc96/AffineInvariantSamplers">[Code]</a> <a href="slides/slide-affine-invariant-ensemble-samplers.pdf">[Slide]</a> 
-               </p>
-               </li>
-               
+               </p></li>
 
-
-               <li><p><b> Convergence of Unadjusted Langevin in High Dimensions: Delocalization of Bias</b></br>
-                  Yifan Chen, Xiaoou Cheng, Jonathan Niles-Weed, Jonathan Weare</br>
+               <li><p><b>Convergence of Unadjusted Langevin in High Dimensions: Delocalization of Bias</b><br>
+                  Yifan Chen, Xiaoou Cheng, Jonathan Niles-Weed, Jonathan Weare<br>
                   Submitted, 2024. <a href="https://arxiv.org/abs/2408.13115">[arXiv]</a> <a href="slides/slide_delocalization_of_bias_Langevin.pdf">[Slide]</a>
-               </p>
-               </li>
+               </p></li>
                
-               <li><p><b> Fisher-Rao Gradient Flow: Geodesic Convexity and Functional Inequalities</b></br>
-                  José A. Carrillo, Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Dongyi Wei</br>
+               <li><p><b>Fisher-Rao Gradient Flow: Geodesic Convexity and Functional Inequalities</b><br>
+                  José A. Carrillo, Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Dongyi Wei<br>
                   Submitted, 2024. <a href="https://arxiv.org/abs/2407.15693">[arXiv]</a>
-               </p>
-               </li>
+               </p></li>
 
-               
-
-               <li><p><b> Sequential-in-time Training of Nonlinear Parametrizations for Solving Time-dependent Partial Differential Equations </b></br>
-                  Huan Zhang, Yifan Chen, Eric Vanden-Eijnden, Benjamin Peherstorfer</br>
+               <li><p><b>Sequential-in-time Training of Nonlinear Parametrizations for Solving Time-dependent Partial Differential Equations</b><br>
+                  Huan Zhang, Yifan Chen, Eric Vanden-Eijnden, Benjamin Peherstorfer<br>
                   Submitted, 2024. <a href="https://arxiv.org/abs/2404.01145">[arXiv]</a>
-               </p>
-               </li>
+               </p></li>
 
-               <li><p><b> Sampling via Gradient Flows in the Space of Probability Measures</b></br>
-                  Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Sebastian Reich, Andrew M. Stuart</br>
+               <li><p><b>Sampling via Gradient Flows in the Space of Probability Measures</b><br>
+                  Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Sebastian Reich, Andrew M. Stuart<br>
                   Submitted, 2023. <a href="https://arxiv.org/abs/2310.03597">[arXiv]</a> <a href="https://github.com/Zhengyu-Huang/InverseProblems.jl">[Code]</a><a href="slides/Slides_Design_of_Gradient_Flows_For_Sampling.pdf"> [Slide]</a>
-               </p>
-               </li>
+               </p></li>
             </ul>
 
             <h5>Conference Publications</h5>
-            
             <ul class="push-down-1">
-               
-
-               <li><p><b> Probabilistic Forecasting with Stochastic Interpolants and Follmer Processes</b></br>
-                  Yifan Chen, Mark Goldstein, Mengjian Hua, Michael S. Albergo, Nicholas M. Boffi, Eric Vanden-Eijnden</br>
+               <li><p><b>Probabilistic Forecasting with Stochastic Interpolants and Follmer Processes</b><br>
+                  Yifan Chen, Mark Goldstein, Mengjian Hua, Michael S. Albergo, Nicholas M. Boffi, Eric Vanden-Eijnden<br>
                   <i>ICML</i>, 2024. <a href="https://openreview.net/pdf/9dc86834c15cdb6e583ef6154ec5fa6c51ecee8e.pdf">[Proceedings]</a> <a href="https://arxiv.org/abs/2403.13724">[arXiv]</a> <a href="slides/slide_forecasting-yifan-chen.pdf">[Slide]</a> <a href="https://github.com/interpolants/forecasting">[Code]</a> <a href="slides/forecasting_poster.pdf">[Poster]</a>
-               </p>
-               </li>
+               </p></li>
 
-               <li><p><b> Inpainting crystal structure generations with score-based denoising </b></br>
-                  Xinzhe Dai, Peichen Zhong, Bowen Deng, Yifan Chen, Gerbrand Ceder</br>
+               <li><p><b>Inpainting crystal structure generations with score-based denoising</b><br>
+                  Xinzhe Dai, Peichen Zhong, Bowen Deng, Yifan Chen, Gerbrand Ceder<br>
                   <i>ICML Workshop AI4Science</i>, 2024. <a href="https://openreview.net/pdf?id=T1mIt5exUF">[Proceedings]</a>
-                  
-               </p>
-               </li>
+               </p></li>
 
-               <li><p><b> Principled Probabilistic Imaging using Diffusion Models as Plug-and-Play Priors </b></br>
-                  Zihui Wu, Yu Sun, Yifan Chen, Bingliang Zhang, Yisong Yue, Katherine L. Bouman</br>
+               <li><p><b>Principled Probabilistic Imaging using Diffusion Models as Plug-and-Play Priors</b><br>
+                  Zihui Wu, Yu Sun, Yifan Chen, Bingliang Zhang, Yisong Yue, Katherine L. Bouman<br>
                   <i>NeurIPS</i>, 2024. <a href="https://openreview.net/pdf?id=Xq9HQf7VNV">[Proceedings]</a> <a href="https://arxiv.org/abs/2405.18782">[arXiv]</a> <a href="https://github.com/zihuiwu/PnP-DM-public">[Code]</a> 
-               </p> 
-               </li>
-
+               </p></li>
             </ul>
 
             <h5>Journal Publications</h5>
-
-
             <ul class="push-down-1">
-
-               <li><p><b> Stable Derivative Free Gaussian Mixture Variational Inference for Bayesian Inverse Problems</b></br>
-                  Baojun Che, Yifan Chen, Zhenghao Huan, Daniel Zhengyu Huang, Weijie Wang</br>
+               <li><p><b>Stable Derivative Free Gaussian Mixture Variational Inference for Bayesian Inverse Problems</b><br>
+                  Baojun Che, Yifan Chen, Zhenghao Huan, Daniel Zhengyu Huang, Weijie Wang<br>
                   <i>Accepted at SIAM Journal on Scientific Computing</i>, 2025.  <a href="https://arxiv.org/abs/2501.04259">[arXiv]</a>
                   <a href="https://github.com/PKU-CMEGroup/InverseProblems.jl/tree/master/Derivative-Free-Variational-Inference">[Code]</a>  
-               </p>
-               </li>
+               </p></li>
 
-               <li><p><b> Randomly Pivoted Cholesky: Practical Approximation of A Kernel Matrix with Few Entry Evaluations</b></br>
-                  Yifan Chen, Ethan N. Epperly, Joel A. Tropp, Robert J. Webber</br>
-                  <i>Communications on Pure and Applied Mathematics</i>, 2024. <a href ="https://onlinelibrary.wiley.com/doi/10.1002/cpa.22234">[Journal]</a> <a href="https://arxiv.org/abs/2207.06503">[arXiv]</a> <a href="https://github.com/eepperly/Randomly-Pivoted-Cholesky">[Code]</a> <a href="slides/Random-sparse-Cholesky.pdf">[Slide]</a
-               </p>
-               </li>
+               <li><p><b>Randomly Pivoted Cholesky: Practical Approximation of A Kernel Matrix with Few Entry Evaluations</b><br>
+                  Yifan Chen, Ethan N. Epperly, Joel A. Tropp, Robert J. Webber<br>
+                  <i>Communications on Pure and Applied Mathematics</i>, 2024. <a href ="https://onlinelibrary.wiley.com/doi/10.1002/cpa.22234">[Journal]</a> <a href="https://arxiv.org/abs/2207.06503">[arXiv]</a> <a href="https://github.com/eepperly/Randomly-Pivoted-Cholesky">[Code]</a> <a href="slides/Random-sparse-Cholesky.pdf">[Slide]</a>
+               </p></li>
 
-               <li><p><b> Gaussian Measures Conditioned on Nonlinear Observations: Consistency, MAP Estimators, and Simulation </b></br>
-                  Yifan Chen, Bamdad Hosseini, Houman Owhadi, Andrew M. Stuart</br>
+               <li><p><b>Gaussian Measures Conditioned on Nonlinear Observations: Consistency, MAP Estimators, and Simulation</b><br>
+                  Yifan Chen, Bamdad Hosseini, Houman Owhadi, Andrew M. Stuart<br>
                   <i>Statistics and Computing</i>, 2024. <a href ="https://link.springer.com/article/10.1007/s11222-024-10535-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20241209&utm_content=10.1007%2Fs11222-024-10535-0">[Journal]</a> <a href="https://arxiv.org/abs/2405.13149">[arXiv]</a> <a href="https://github.com/yifanc96/GaussianProcessPDEs">[Code]</a>
-               </p>
-               </li> 
+               </p></li> 
 
-               <li><p><b> Efficient, Multimodal, and Derivative-Free Bayesian Inference with Fisher-Rao Gradient Flows</b></br>
-                  Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Sebastian Reich, Andrew M. Stuart</br>
+               <li><p><b>Efficient, Multimodal, and Derivative-Free Bayesian Inference with Fisher-Rao Gradient Flows</b><br>
+                  Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Sebastian Reich, Andrew M. Stuart<br>
                   <i>Inverse Problems</i>, 2024. <a href ="https://iopscience.iop.org/article/10.1088/1361-6420/ad847b">[Journal]</a> <a href="https://arxiv.org/abs/2406.17263">[arXiv]</a> <a href="https://github.com/Zhengyu-Huang/InverseProblems.jl/tree/master/Multimodal">[Code]</a> <a href="slides/Slides_Gaussian_mixture_Fisher_Rao.pdf">[Slide]</a> 
-               </p>
-               </li>
+               </p></li>
                
-               <li><p><b> Error Analysis of Kernel/GP Methods for Nonlinear and Parametric PDEs</b></br>
-                  Pau Batlle, Yifan Chen, Bamdad Hosseini, Houman Owhadi, Andrew M. Stuart</br>
+               <li><p><b>Error Analysis of Kernel/GP Methods for Nonlinear and Parametric PDEs</b><br>
+                  Pau Batlle, Yifan Chen, Bamdad Hosseini, Houman Owhadi, Andrew M. Stuart<br>
                   <i>Jounal of Computational Physics</i>, 2024. <a href ="https://www.sciencedirect.com/science/article/abs/pii/S0021999124007368">[Journal]</a> <a href="https://arxiv.org/abs/2305.04962">[arXiv]</a> <a href="https://github.com/yifanc96/HighDimPDEs-GPsolver">[Code]</a> 
-               </p>
-               </li>
+               </p></li>
 
-               <li><p><b> Provable Probabilistic Imaging using Score-Based Generative Priors</b></br>
-                  Yu Sun, Zihui Wu, Yifan Chen, Berthy T. Feng, Katherine L. Bouman</br>
+               <li><p><b>Provable Probabilistic Imaging using Score-Based Generative Priors</b><br>
+                  Yu Sun, Zihui Wu, Yifan Chen, Berthy T. Feng, Katherine L. Bouman<br>
                   <i>IEEE Transactions on Computational Imaging</i>, 2024. <a href ="https://ieeexplore.ieee.org/document/10645293">[Journal]</a> <a href="https://arxiv.org/abs/2310.10835">[arXiv]</a> <a href="https://github.com/sunyumark/PnP-MonteCarlo">[Code]</a>
-               </p>
-               </li>
+               </p></li>
                
-               <li><p><b> Sparse Cholesky Factorization for Solving Nonlinear PDEs via Gaussian Processes</b></br>
-                  Yifan Chen, Houman Owhadi, Florian Schaefer</br>
-                  <i>Mathematics of Computation</i>, 2024. <a href ="https://www.ams.org/journals/mcom/0000-000-00/S0025-5718-2024-03992-3/">[Journal]</a> <a href="https://arxiv.org/abs/2304.01294">[arXiv]</a> <a href="https://github.com/yifanc96/PDEs-GP-KoleskySolver">[Code]</a><a href="slides/SparseCholesky_ICERM.pdf"> [Slide]</a>  <a href="slides/Random-sparse-Cholesky.pdf">[Slide+]</a
-               </p>
-               </li>
-
+               <li><p><b>Sparse Cholesky Factorization for Solving Nonlinear PDEs via Gaussian Processes</b><br>
+                  Yifan Chen, Houman Owhadi, Florian Schaefer<br>
+                  <i>Mathematics of Computation</i>, 2024. <a href ="https://www.ams.org/journals/mcom/0000-000-00/S0025-5718-2024-03992-3/">[Journal]</a> <a href="https://arxiv.org/abs/2304.01294">[arXiv]</a> <a href="https://github.com/yifanc96/PDEs-GP-KoleskySolver">[Code]</a><a href="slides/SparseCholesky_ICERM.pdf"> [Slide]</a>  <a href="slides/Random-sparse-Cholesky.pdf">[Slide+]</a>
+               </p></li>
                
-               <li><p><b> Exponentially Convergent Multiscale Methods for 2D High Frequency Heterogeneous Helmholtz Equations</b></br>
-                  Yifan Chen, Thomas Y. Hou, Yixuan Wang</br>
+               <li><p><b>Exponentially Convergent Multiscale Methods for 2D High Frequency Heterogeneous Helmholtz Equations</b><br>
+                  Yifan Chen, Thomas Y. Hou, Yixuan Wang<br>
                   <i>SIAM Multiscale Modeling and Simulation</i>, 2023. <a href ="https://epubs.siam.org/doi/full/10.1137/22M1507802">[Journal]</a> <a href="https://arxiv.org/abs/2105.04080">[arXiv]</a> <a href="slides/ExpMsFEM_slide.pdf"> [Slide]</a> <a href="slides/Yifan_thesis_slide.pdf"> [Slide+]</a>
-                  
-               </p>
-               </li>
+               </p></li>
 
-               <li><p><b> Exponentially Convergent Multiscale Finite Element Method </b></br>
-                  Yifan Chen, Thomas Y. Hou, Yixuan Wang</br>
+               <li><p><b>Exponentially Convergent Multiscale Finite Element Method</b><br>
+                  Yifan Chen, Thomas Y. Hou, Yixuan Wang<br>
                   <i>Communications on Applied Mathematics and Computation</i>, 2023. <a href ="https://link.springer.com/article/10.1007/s42967-023-00260-2">[Journal]</a> <a href="https://arxiv.org/abs/2212.00823">[arXiv]</a> <a href="slides/ExpMsFEM_slide.pdf">[Slide]</a> <a href="slides/Yifan_thesis_slide.pdf"> [Slide+]</a>
-               </p>
-               </li>
+               </p></li>
 
-               <li><p><b> Multiscale Elliptic PDEs Upscaling and Function Approximation via Subsampled Data</b></br>
-                  Yifan Chen, Thomas Y. Hou</br>
+               <li><p><b>Multiscale Elliptic PDEs Upscaling and Function Approximation via Subsampled Data</b><br>
+                  Yifan Chen, Thomas Y. Hou<br>
                   <i>SIAM Multiscale Modeling and Simulation</i>, 2022. <a href ="https://epubs.siam.org/doi/abs/10.1137/20M1372214">[Journal]</a> <a href="https://arxiv.org/abs/2010.04199">[arXiv]</a> <a href="https://github.com/yifanc96/Multiscale-via-Subsampling">[Code]</a>
-               </p>
-               </li>
-               <li><p><b> Solving and Learning Nonlinear PDEs with Gaussian Processes</b></br>
-                  Yifan Chen, Bamdad Hosseini, Houman Owhadi, Andrew M. Stuart</br>
+               </p></li>
+
+               <li><p><b>Solving and Learning Nonlinear PDEs with Gaussian Processes</b><br>
+                  Yifan Chen, Bamdad Hosseini, Houman Owhadi, Andrew M. Stuart<br>
                   <i>Jounal of Computational Physics</i>, 2021. <a href="https://www.sciencedirect.com/science/article/pii/S0021999121005635">[Journal]</a> <a href="https://arxiv.org/abs/2103.12959">[arXiv]</a> <a href="https://github.com/yifanc96/NonLinPDEs-GPsolver">[Code]</a> <a href="slides/Solving and Learning PDEs with Gaussian Processes_Longversion.pdf">[Slide]</a> <a href="slides/GP-PDE-InvProblems.pdf">[Slide+]</a>
-               </p>
-               </li>
-               <li><p><b> Exponential Convergence for Multiscale Linear Elliptic PDEs via Adaptive Edge Basis Functions</b></br>
-                  Yifan Chen, Thomas Y. Hou, Yixuan Wang</br>
+               </p></li>
+
+               <li><p><b>Exponential Convergence for Multiscale Linear Elliptic PDEs via Adaptive Edge Basis Functions</b><br>
+                  Yifan Chen, Thomas Y. Hou, Yixuan Wang<br>
                  <i>SIAM Multiscale Modeling and Simulation</i>, 2021. <a href="https://epubs.siam.org/doi/abs/10.1137/20M1352922">[Journal]</a> <a href="https://arxiv.org/abs/2007.07418">[arXiv]</a> <a href="slides/ExpMsFEM_slide.pdf">[Slide]</a> <a href="slides/Yifan_thesis_slide.pdf">[Slide+]</a>
-               </p>
-               </li>
-               <li><p><b> Consistency of Empirical Bayes and Kernel Flow For Hierarchical Parameter Estimation</b></br>
-                  Yifan Chen, Houman Owhadi, Andrew M. Stuart</br>
+               </p></li>
+
+               <li><p><b>Consistency of Empirical Bayes and Kernel Flow For Hierarchical Parameter Estimation</b><br>
+                  Yifan Chen, Houman Owhadi, Andrew M. Stuart<br>
                   <i>Mathematics of Computation</i>, 2021. <a href="https://www.ams.org/mcom/0000-000-00/S0025-5718-2021-03649-2/">[Journal]</a> <a href="https://arxiv.org/abs/2005.11375">[arXiv]</a> <a href="https://github.com/yifanc96/Consistency-EB-and-KF">[Code]</a> <a href="slides/consistency_EB_KF.pdf">[Slide]</a> <a href="slides/consistency_EB_KF_longer.pdf">[Longer Slide]</a> <a href="https://www.youtube.com/watch?v=ouEvr7BviXw">[Short Video]</a> <a href="https://www.youtube.com/watch?v=88seM_rMllY&list=PLArBKNfJxuun7IjBHqO2x2k4nvPoxqVzt&index=15">[Longer Video]</a>
-               </p>
-               <li><p><b> Function Approximation via The Subsampled Poincare Inequality</b></br>
-                  Yifan Chen, Thomas Y. Hou</br>
+               </p></li>
+
+               <li><p><b>Function Approximation via The Subsampled Poincare Inequality</b><br>
+                  Yifan Chen, Thomas Y. Hou<br>
                   <i>Discrete & Continuous Dynamical Systems - A</i>, 2020. <a href="https://www.aimsciences.org/article/doi/10.3934/dcds.2020296">[Journal]</a> <a href="https://arxiv.org/abs/1912.08173">[arXiv]</a>
-               </p>
-               <li><p><b> Optimal Transport Natural Gradient for Statistical Manifolds with Continuous Sample Space</b></br>
-                  Yifan Chen, Wuchen Li</br>
+               </p></li>
+
+               <li><p><b>Optimal Transport Natural Gradient for Statistical Manifolds with Continuous Sample Space</b><br>
+                  Yifan Chen, Wuchen Li<br>
                   <i>Information Geometry</i>, 2020. <a href="https://link.springer.com/content/pdf/10.1007/s41884-020-00028-0.pdf">[Journal]</a> <a href="https://arxiv.org/abs/1805.08380">[arXiv]</a> <a href="https://github.com/yifanc96/Wasserstein-Natural-Gradient">[Code]</a> <a href="slides/Wasserstein_geometry.pdf">[Slide]</a> 
-               </p>
-               <li><p><b> Run-and-Inspect Method for Nonconvex Optimization and Global Optimality Bounds for R-Local Minimizers</b></br>
-                  Yifan Chen, Yuejiao Sun, Wotao Yin</br>
+               </p></li>
+
+               <li><p><b>Run-and-Inspect Method for Nonconvex Optimization and Global Optimality Bounds for R-Local Minimizers</b><br>
+                  Yifan Chen, Yuejiao Sun, Wotao Yin<br>
                   <i>Mathematical Programming</i>, 2019. <a href="https://link.springer.com/article/10.1007/s10107-019-01397-w">[Journal]</a> <a href="https://arxiv.org/abs/1711.08172">[arXiv]</a> <a href="slides/R_local_min_slide.pdf">[Slide]</a>
-               </p>
-               <li><p><b> The Quadratic Wasserstein Metric for Earthquake Location</b></br>
-                  Jing Chen, Yifan Chen, Hao Wu, Dinghui Yang</br>
+               </p></li>
+
+               <li><p><b>The Quadratic Wasserstein Metric for Earthquake Location</b><br>
+                  Jing Chen, Yifan Chen, Hao Wu, Dinghui Yang<br>
                   <i>Journal of Computational Physics</i>, 2018. <a href="https://www.sciencedirect.com/science/article/pii/S0021999118304443">[Journal]</a> <a href="https://arxiv.org/abs/1710.10447">[arXiv]</a> <a href="slides/W2_earthquake.pdf">[Slide]</a>
-               </p>
+               </p></li>
             </ul>
 
             <h5>Thesis</h5>
-
             <ul class="push-down-1">
-               <li><p><b> On Multiscale and Statistical Numerical Methods for PDEs and Inverse Problems </b></br>
-                  Yifan Chen</br>
+               <li><p><b>On Multiscale and Statistical Numerical Methods for PDEs and Inverse Problems</b><br>
+                  Yifan Chen<br>
                   Ph.D. Thesis, The W.P. Carey and Co. Prize in Applied Mathematics, 2023 <a href="https://thesis.library.caltech.edu/15224/">[CaltechTHESIS]</a> <a href="slides/Yifan_thesis_slide.pdf"> [Slide]</a>
-               </p>
-               </li>
+               </p></li>
             </ul>
 
             <h5>Notes</h5>
-
             <ul class="push-down-1">
-               <li><p><b> Gradient Flows for Sampling: Mean-Field Models, Gaussian Approximations and Affine Invariance</b></br>
-                  Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Sebastian Reich, Andrew M. Stuart</br>
+               <li><p><b>Gradient Flows for Sampling: Mean-Field Models, Gaussian Approximations and Affine Invariance</b><br>
+                  Yifan Chen, Daniel Zhengyu Huang, Jiaoyang Huang, Sebastian Reich, Andrew M. Stuart<br>
                    <a href="https://arxiv.org/abs/2302.11024">[arXiv]</a>
-               </p>
-               </li>
+               </p></li>
             </ul>
 
-            
-
-            
-
-      
-
-            <!-- Dissertation abstract -->
-            <!---
-            <h3 class="push-down-3"><span>Dissertation</span></h3>
-            <p>{BRIEF PARAGRAPH(S) ABSTRACT OF YOUR DISSERTATION}</p>
-            
-            <blockquote>{SAMPLE/QUOTE FROM YOUR DISSERTATION}
-               <footer>
-                  Smith, Jane. (2015). <em>Title of Dissertation.</em> (Doctoral dissertation). Retrieved from Some Online Repository. (http://online-repository.com)
-               </footer>
-            </blockquote>
-         -->
          <h3 class="push-down-4"><span>Professional Experience</span></h3>
          <h5>Referee Service</h5>
-
             <ul class="push-down-1">
-               <li>Reviewer for NeurIPS 2024
-                  <!-- (1 paper) -->
-               </li> 
-               <li>Reviewer for <a href="https://onlinelibrary.wiley.com/journal/10970312">Communications on Pure and Applied Mathematics</a> 
-               </li> 
-               <li>Reviewer for <a href="https://imstat.org/journals-and-publications/annals-of-applied-probability/">Annals of Applied Probability</a> 
-               </li> 
-
-               <li>Reviewer for <a href="https://www.sciencedirect.com/journal/journal-of-functional-analysis">Journal of Functional Analysis</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               <li>
-                  Reviewer for <a href="https://www.jmlr.org">Journal of Machine Learning Research</a>  
-               </li>
-               <li>Reviewer for <a href="https://www.ams.org/publications/journals/journalsframework/mcom">Mathematics of Computation</a> 
-               </li> 
-               <li>Reviewer for <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a> 
-               </li> 
-               <li>Reviewer for <a href="https://www.siam.org/publications/journals/siam-asa-journal-on-uncertainty-quantification-juq">SIAM on Uncertainty Quantification</a> 
-                  <!-- (2 papers) -->
-               </li> 
-               <li>Reviewer for <a href="https://www.siam.org/publications/siam-journals/siam-journal-on-imaging-sciences/">SIAM on Imaging Sciences</a> 
-                  <!-- (2 papers) -->
-               </li>
-               <li>Reviewer for <a href="https://www.siam.org/publications/siam-journals/siam-journal-on-optimization/">SIAM on Optimization</a> 
-                  <!-- (2 papers) -->
-               </li>
-               
-               <li>Reviewer for <a href="https://www.google.com/search?client=safari&rls=en&q=siam+math+data+science&ie=UTF-8&oe=UTF-8">SIAM on Mathematics of Data Science</a> 
-                  <!-- (2 papers) -->
-               </li> 
-               
-               <li>Reviewer for <a href="https://www.siam.org/publications/journals/multiscale-modeling-and-simulation-a-siam-interdisciplinary-journal-mms">SIAM on Multiscale Modeling and Simulation</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               <li>Reviewer for <a href="https://www.siam.org/publications/journals/siam-journal-on-numerical-analysis-sinum">SIAM on Numerical Analysis</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               <li>Reviewer for <a href="https://www.siam.org/publications/journals/siam-journal-on-control-and-optimization-sicon">SIAM on Control and Optimization </a>
-                  <!-- (1 paper) -->
-               </li>
-
-               <li>Reviewer for <a href="https://academic.oup.com/imajna">IMA Journal of Numerical Analysis</a> 
-                  <!-- (1 paper) -->
-               </li> 
-
-               <li>Reviewer for <a href="https://www.sciencedirect.com/journal/linear-algebra-and-its-applications">Linear Algebra and Its Applications</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               
-
-               <li>Reviewer for <a href="https://www.nature.com/natmachintell/">Nature Machine Intelligence</a> 
-                  <!-- (1 paper) -->
-               </li> 
-
-               <li>Reviewer for <a href="https://www.cambridge.org/core/journals/european-journal-of-applied-mathematics">European Journal of Applied Mathematics</a> 
-                  <!-- (1 paper) -->
-               </li> 
-
-               
-               <li>Reviewer for <a href="https://www.aimsciences.org/FoDS">Foundations of Data Science</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               <li>Reviewer for <a href="https://www.aimsciences.org/DCDS">Discrete and Continuous Dynamical Systems</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               
-
-               <li>Reviewer for <a href="https://www.springer.com/journal/40687">Research in the Mathematical Sciences</a> 
-                  <!-- (2 papers)  -->
-               </li>
-               <li>Reviewer for <a href="https://www.degruyter.com/journal/key/cmam/html?lang=en">Computational Methods in Applied Mathematics</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               <li>Reviewer for <a href="https://www.tandfonline.com/journals/gcom20">International Journal of Computer Mathematics</a> 
-                  <!-- (1 paper) -->
-               </li> 
-               
-               <li>Reviewer for <a href="https://link.springer.com/book/10.1007/978-3-030-26980-7">4th International Conference, GSI 2019</a> 
-                  <!-- (1 paper)  -->
-               </li>
+               <li>Reviewer for NeurIPS 2024</li> 
+               <li>Reviewer for <a href="https://onlinelibrary.wiley.com/journal/10970312">Communications on Pure and Applied Mathematics</a></li> 
+               <li>Reviewer for <a href="https://imstat.org/journals-and-publications/annals-of-applied-probability/">Annals of Applied Probability</a></li> 
+               <li>Reviewer for <a href="https://www.sciencedirect.com/journal/journal-of-functional-analysis">Journal of Functional Analysis</a></li> 
+               <li>Reviewer for <a href="https://www.jmlr.org">Journal of Machine Learning Research</a></li>
+               <li>Reviewer for <a href="https://www.ams.org/publications/journals/journalsframework/mcom">Mathematics of Computation</a></li> 
+               <li>Reviewer for <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a></li> 
+               <li>Reviewer for <a href="https://www.siam.org/publications/journals/siam-asa-journal-on-uncertainty-quantification-juq">SIAM on Uncertainty Quantification</a></li> 
+               <li>Reviewer for <a href="https://www.siam.org/publications/siam-journals/siam-journal-on-imaging-sciences/">SIAM on Imaging Sciences</a></li>
+               <li>Reviewer for <a href="https://www.siam.org/publications/siam-journals/siam-journal-on-optimization/">SIAM on Optimization</a></li>
+               <li>Reviewer for <a href="https://www.google.com/search?client=safari&rls=en&q=siam+math+data+science&ie=UTF-8&oe=UTF-8">SIAM on Mathematics of Data Science</a></li> 
+               <li>Reviewer for <a href="https://www.siam.org/publications/journals/multiscale-modeling-and-simulation-a-siam-interdisciplinary-journal-mms">SIAM on Multiscale Modeling and Simulation</a></li> 
+               <li>Reviewer for <a href="https://www.siam.org/publications/journals/siam-journal-on-numerical-analysis-sinum">SIAM on Numerical Analysis</a></li> 
+               <li>Reviewer for <a href="https://www.siam.org/publications/journals/siam-journal-on-control-and-optimization-sicon">SIAM on Control and Optimization</a></li>
+               <li>Reviewer for <a href="https://academic.oup.com/imajna">IMA Journal of Numerical Analysis</a></li> 
+               <li>Reviewer for <a href="https://www.sciencedirect.com/journal/linear-algebra-and-its-applications">Linear Algebra and Its Applications</a></li> 
+               <li>Reviewer for <a href="https://www.nature.com/natmachintell/">Nature Machine Intelligence</a></li> 
+               <li>Reviewer for <a href="https://www.cambridge.org/core/journals/european-journal-of-applied-mathematics">European Journal of Applied Mathematics</a></li> 
+               <li>Reviewer for <a href="https://www.aimsciences.org/FoDS">Foundations of Data Science</a></li> 
+               <li>Reviewer for <a href="https://www.aimsciences.org/DCDS">Discrete and Continuous Dynamical Systems</a></li> 
+               <li>Reviewer for <a href="https://www.springer.com/journal/40687">Research in the Mathematical Sciences</a></li>
+               <li>Reviewer for <a href="https://www.degruyter.com/journal/key/cmam/html?lang=en">Computational Methods in Applied Mathematics</a></li> 
+               <li>Reviewer for <a href="https://www.tandfonline.com/journals/gcom20">International Journal of Computer Mathematics</a></li> 
+               <li>Reviewer for <a href="https://link.springer.com/book/10.1007/978-3-030-26980-7">4th International Conference, GSI 2019</a></li>
             </ul>
          </div>
       </div>
-
    </div>
 
    <!-- Back-to-top button -->
@@ -440,7 +334,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
    <!-- Bootstrap JS Library -->
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
    <!-- html file include script | used for navbar and footer -->
    <script src="js/w3data.js"></script>
@@ -455,10 +349,8 @@
       $(document).ready(function() {
          $("li#research a").addClass("active");
          $("li#research a").addClass("hvr-bubble-bottom");
-
       });
    </script>
 
 </body>
-
 </html>
