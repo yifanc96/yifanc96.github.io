@@ -117,12 +117,12 @@
                  </div>
                  <div id="collapse-sampling" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sampling">
                    <div class="panel-body">
-                     <ul class="push-down-1">
-                        <li><strong>Bias delocalization in high dimensions:</strong> Motivated by molecular dynamics applications, we show that unadjusted Langevin samplers can achieve dimension-independent bias scaling when the quantity of interest depends on few variables. Meanwhile, unbiased samplers must scale with dimension via power laws. See <a href="https://arxiv.org/abs/2408.13115">detailed analysis</a>.</li>
+                     <ul class="push-down-1" style="line-height: 1.8;">
+                        <li style="margin-bottom: 15px;"><strong>Bias delocalization in high dimensions:</strong> Motivated by molecular dynamics applications, we show that unadjusted Langevin samplers can achieve dimension-independent bias scaling when the quantity of interest depends on few variables. Meanwhile, unbiased samplers must scale with dimension via power laws. See <a href="https://arxiv.org/abs/2408.13115">detailed analysis</a>.</li>
                         
-                        <li><strong>Better scaling for unbiased samplers:</strong> <a href="https://arxiv.org/abs/2505.02987">My work</a> introduces new derivative-free and derivative-based ensemble samplers with affine invariance that improve the popular <a href="https://emcee.readthedocs.io/en/stable/emcee">emcee</a> package, especially in high dimensions. Our affine-invariant ensemble HMC achieves state-of-the-art power law scaling while being embarrassingly parallel.</li>
+                        <li style="margin-bottom: 15px;"><strong>Better scaling for unbiased samplers:</strong> <a href="https://arxiv.org/abs/2505.02987">My work</a> introduces new derivative-free and derivative-based ensemble samplers with affine invariance that improve the popular <a href="https://emcee.readthedocs.io/en/stable/emcee">emcee</a> package, especially in high dimensions. Our affine-invariant ensemble HMC achieves state-of-the-art power law scaling while being embarrassingly parallel.</li>
                         
-                        <li><strong>Gradient flows and variational inference:</strong> Variational, approximate approaches can behave more scalable in practice. Our research explores <a href="https://link.springer.com/content/pdf/10.1007/s41884-020-00028-0.pdf">Wasserstein natural gradients in parameter space</a> and a <a href="https://arxiv.org/abs/2310.03597">design framework for gradient flows</a> in sampling. We focus on Fisher-Rao gradient flows as a promising, diffeomorphism-invariant approach for posterior sampling. We've proven uniform exponential convergence for arbitrary target distributions and established comprehensive <a href="https://arxiv.org/abs/2407.15693">functional inequalities in Fisher-Rao geometry</a>. We also developed a <a href ="https://iopscience.iop.org/article/10.1088/1361-6420/ad847b">Kalman filter approximation</a> for efficient, multimodal, derivative-free sampling in large-scale Bayesian inverse problems; see recent <a href="https://arxiv.org/abs/2501.04259">further improvement</a> through specialized high dimensional quadrature.</li>
+                        <li style="margin-bottom: 15px;"><strong>Gradient flows and variational inference:</strong> Variational, approximate approaches can behave more scalably in practice. Our research explores <a href="https://link.springer.com/content/pdf/10.1007/s41884-020-00028-0.pdf">Wasserstein natural gradients</a> and a <a href="https://arxiv.org/abs/2310.03597">design framework for gradient flows in sampling</a>. We focus on Fisher-Rao gradient flows as a promising diffeomorphism-invariant approach and establish comprehensive <a href="https://arxiv.org/abs/2407.15693">functional inequalities in Fisher-Rao geometry</a>. We also developed a <a href="https://iopscience.iop.org/article/10.1088/1361-6420/ad847b">Kalman filter approximation</a> for efficient, multimodal, derivative-free sampling in large-scale Bayesian inverse problems; see recent <a href="https://arxiv.org/abs/2501.04259">further improvement</a> through specialized high dimensional quadrature.</li>
                     </ul>
                      <p>
                   </p>
@@ -140,7 +140,11 @@
                   </div>
                   <div id="collapse-generative" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-generative">
                     <div class="panel-body">
-                      <p>xxx</p>
+                     <ul class="push-down-1" style="line-height: 1.8;">
+                        <li style="margin-bottom: 15px;"><strong>Probabilistic forecasting with generative modeling:</strong> We develop probabilistic forecasting methods using <a href="https://openreview.net/pdf/9dc86834c15cdb6e583ef6154ec5fa6c51ecee8e.pdf">generative diffusion from a point source</a>, based on stochastic interpolants with applications in fluid and video forecasting. We prove that Föllmer's process—an entropy-minimizing dynamic connecting Dirac measures to target distributions—minimizes a novel statistical estimation error between true and generated samples.</li>
+                        
+                        <li style="margin-bottom: 15px;"><strong>Posterior sampling with diffusion priors:</strong> I collaborate with scientists on developing rigorous probabilistic imaging methods (see <a href="https://ieeexplore.ieee.org/document/10645293">PnP-MC</a>, <a href="https://openreview.net/pdf?id=Xq9HQf7VNV">PnP-DM</a>, <a href="https://arxiv.org/abs/2503.01161">SGDD</a>) by integrating generative diffusion priors with efficient posterior sampling algorithms.</li>
+                    </ul>
                     </div>
                   </div>
                 </div>
