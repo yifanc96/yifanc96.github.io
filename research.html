@@ -40,6 +40,40 @@
 
    <!-- Local styles -->
    <link rel="stylesheet" href="css/main.css">
+
+   <!-- Teaching Panel styles -->
+   <link rel="stylesheet" href="css/teaching-panels.css">
+
+   <style>
+      /* plus glyph for showing collapsible panels */
+      .panel-heading .accordion-plus-toggle:before {
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f068";
+        float: right;
+        color: RGBA(119, 136, 153, .5);
+      }
+
+      .panel-heading .accordion-plus-toggle.collapsed:before {
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f067";
+        color: RGBA(119, 136, 153, .5);
+      }
+
+      /* sets the link to the width of the entire panel title */
+      .panel-title>a {
+        display: block;
+      }
+   </style>
 </head>
 
 <body>
@@ -56,32 +90,32 @@
             <p>
                My research aims to develop rigorous foundations and algorithms for high-dimensional computational challenges in applied mathematics, statistics, and data science. These challenges are prevalent in fine-scale physical equations, large-scale machine learning datasets, and statistical/stochastic models with complex uncertainties.
 
-               I use probability theory and numerical analysis with multiscale, randomized algorithms and recent progresses in machine learning to formalize and explore the following directions:
+               I am interested in formalizing and exploring the following high level questions:
             </p>
             <ul class="push-down-1">
                <li>How to understand and achieve provably efficient numerical estimation for PDEs, matrices, and probability distributions, especially in high dimensional or heterogeneous settings?</li>
                <li>How to accelerate and automate these estimations with machine learning rigorously?</li>
             </ul>
 
-            <p>Some specific topics are as follows:</p>
+            <!-- <p>Some specific topics are as follows:</p>
             <ul class="push-down-1">
                <li><b>Multiscale analysis, randomized algorithms</b>: numerical homogenization, randomized numerical linear algebra</li>
                <li><b>Gaussian processes, kernel methods</b>: scalable algorithms, uncertainty quantification, learning theory</li>
                <li><b>Bayesian modeling, stochastic sampling</b>: gradient flows, optimal transport, information geometry, diffusion models</li>
             </ul>
             
-            <p>In particular, my recent research focuses on the simulation, sampling, control, and statistical learning of high-dimensional probability distributions, with applications in scientific computing and machine learning. A core objective is to develop mathematical understanding of how dynamics of probability measures and their approximations behave in high-dimensional spaces, and how these insights can be used to systematically design probabilistic methods that automate and accelerate scientific applications. Applications I have been studying include imaging, molecular dynamics, chemistry, and forecasting.</p>
+            <p>In particular, my recent research focuses on the simulation, sampling, control, and statistical learning of high-dimensional probability distributions, with applications in scientific computing and machine learning. A core objective is to develop mathematical understanding of how dynamics of probability measures and their approximations behave in high-dimensional spaces, and how these insights can be used to systematically design probabilistic methods that automate and accelerate scientific applications. Applications I have been studying include imaging, molecular dynamics, chemistry, and forecasting.</p> -->
 
-            <div class="panel-group" id="research-topics">
+            <div class="panel-group" id="research-topics" role="tablist" aria-multiselectable="true">
                <div class="panel panel-default">
-                 <div class="panel-heading">
+                 <div class="panel-heading" role="tab" id="heading-sampling">
                    <h5 class="panel-title">
-                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-sampling">
+                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-sampling" aria-expanded="false" aria-controls="collapse-sampling">
                        High dimensional sampling
                      </a>
                    </h5>
                  </div>
-                 <div id="collapse-sampling" class="panel-collapse collapse">
+                 <div id="collapse-sampling" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sampling">
                    <div class="panel-body">
                      <p>xxx</p>
                    </div>
@@ -89,28 +123,29 @@
                </div>
 
                <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading" role="tab" id="heading-generative">
                     <h5 class="panel-title">
-                      <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-generative">
+                      <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-generative" aria-expanded="false" aria-controls="collapse-generative">
                         Generative modeling and Bayesian inference
                       </a>
                     </h5>
                   </div>
-                  <div id="collapse-generative" class="panel-collapse collapse">
+                  <div id="collapse-generative" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-generative">
                     <div class="panel-body">
                       <p>xxx</p>
                     </div>
                   </div>
                 </div>
+
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading" role="tab" id="heading-statistical">
                     <h5 class="panel-title">
-                      <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-statistical">
+                      <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-statistical" aria-expanded="false" aria-controls="collapse-statistical">
                       Statistical numerical methods
                       </a>
                     </h5>
                   </div>
-                  <div id="collapse-statistical" class="panel-collapse collapse">
+                  <div id="collapse-statistical" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-statistical">
                     <div class="panel-body">
                       <p>xxx</p>
                     </div>
@@ -118,19 +153,20 @@
                 </div>
 
                <div class="panel panel-default">
-                 <div class="panel-heading">
+                 <div class="panel-heading" role="tab" id="heading-multiscale">
                    <h5 class="panel-title">
-                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-multiscale">
+                     <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="#research-topics" href="#collapse-multiscale" aria-expanded="false" aria-controls="collapse-multiscale">
                      Multiscale numerical methods
                      </a>
                    </h5>
                  </div>
-                 <div id="collapse-multiscale" class="panel-collapse collapse">
+                 <div id="collapse-multiscale" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-multiscale">
                    <div class="panel-body">
                      <p>xxx</p>
                    </div>
                  </div>
                </div>
+
              </div>
 
             <h3 class="push-down-4"><span>Publications</span></h3>
