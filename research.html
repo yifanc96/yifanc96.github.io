@@ -162,13 +162,13 @@
                       <p>Recent machine learning approaches for PDEs and inverse problems often treat PDEs as data that describe the relationships between pointwise function evaluations and their derivatives at specific collocation points. By fitting all the data using neural network function approximators, these techniques lead to automatic machine learning-based solvers. Compared to neural networks, Gaussian processes (GPs) and kernel methods offer more interpretable and theoretically grounded function approximators, with deep connections to meshless collocation methods and built-in uncertainty quantification.
                         I have been contributing to a line of work on using GPs to automate the solution of nonlinear PDEs and inverse problems.</p>
                         <ul class="push-down-1" style="line-height: 1.8;">
-                           <li style="margin-bottom: 15px;"><strong>Solving PDEs and inverse problems with GPs:</strong> our framework <a href="https://www.sciencedirect.com/science/article/pii/S0021999121005635">algorithms</a>, <a href ="https://www.sciencedirect.com/science/article/abs/pii/S0021999124007368">error estimates</a>, and <a href ="https://link.springer.com/article/10.1007/s11222-024-10535-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20241209&utm_content=10.1007%2Fs11222-024-10535-0">uncertainty quantification</a> </li>
+                           <li style="margin-bottom: 15px;"><strong>Solving PDEs and inverse problems with GPs:</strong> a framework with <a href="https://www.sciencedirect.com/science/article/pii/S0021999121005635">algorithms</a>, <a href ="https://www.sciencedirect.com/science/article/abs/pii/S0021999124007368">error estimates</a>, and <a href ="https://link.springer.com/article/10.1007/s11222-024-10535-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20241209&utm_content=10.1007%2Fs11222-024-10535-0">uncertainty quantification</a> </li>
                            
                            <li style="margin-bottom: 15px;"><strong>Hiearchical parameter learning:</strong> our work prove the <a href="https://www.ams.org/mcom/0000-000-00/S0025-5718-2021-03649-2/">large data limit for hierarchical parameter learning</a> of covariance kernels of the GPs using either probabilistic empirical Bayes or approximation theoretic criteria, which also leads to new results in spatial statistics</li>
                            
                            <li style="margin-bottom: 15px;"><strong>Fast algorithms with Sparse Cholesky:</strong> our work develops <a href ="https://www.ams.org/journals/mcom/0000-000-00/S0025-5718-2024-03992-3/">new adaption of sparse Cholesky algorithms</a> based on screening effect in spatial statistics that compress the resulting kernel matrices – derived from pointwise evaluations of the covariance kernel and its partial derivatives – with state-of-the-art near-linear complexity, with new, simpler analysis.</li>
                        </ul>
-                       For fast kernel methods in high dimensions, see also <a href ="https://onlinelibrary.wiley.com/doi/10.1002/cpa.22234">Randomly pivoted Cholesky</a>
+                       For fast kernel methods in high dimensions, see also <a href ="https://onlinelibrary.wiley.com/doi/10.1002/cpa.22234">randomly pivoted Cholesky</a>
                     </div>
                   </div>
                 </div>
@@ -182,9 +182,15 @@
                    </h5>
                  </div>
                  <div id="collapse-multiscale" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-multiscale">
-                   <div class="panel-body">
-                     <p>xxx</p>
-                   </div>
+                  <div class="panel-body">
+                     <p>PDEs in physical sciences present significant computational challenges, especially those involving heterogeneous media and high-frequency oscillations. These scenarios require substantial resources to resolve accurate physics. Multiscale methodology has long been advocated to address this problem by identifying low-complexity, homogenized models at coarse scales. While theoretical developments for homogenizing elliptic equations have seen considerable progress, high-frequency Helmholtz equations remain challenging due to their lack of ellipticity, leading to numerical stability issues known as pollution effects.</p>
+                     
+                     <ul class="push-down-1" style="line-height: 1.8;">
+                         <li style="margin-bottom: 15px;"><strong>Exponentially convergent multiscale finite element methods:</strong> We develop <a href ="https://link.springer.com/article/10.1007/s42967-023-00260-2">ExpMsFEM</a> that extend previous work and achieve exponential convergence of accuracy (see <a href ="https://epubs.siam.org/doi/full/10.1137/22M1507802">the paper</a> for 2D Helmholtz equations and <a href ="https://epubs.siam.org/doi/abs/10.1137/20M1372214">this</a> for rough elliptic equations). This method accurately estimates highly oscillatory solutions with a few specialized basis functions that capture coarse-scale behavior while efficiently incorporating fine-scale features through localized simulations. </li>
+                         
+                         <li style="margin-bottom: 15px;"><strong>Multiscale upscaling with subsampled data:</strong> <a href="https://epubs.siam.org/doi/abs/10.1137/20M1372214">A novel multiscale method</a> using subsampled coarse variables for upscaling, and the corresponding <a href="https://www.aimsciences.org/article/doi/10.3934/dcds.2020296">subsampled Poincaré inequalities</a> for analysis of its accuracy.</li>
+                     </ul>
+                 </div>
                  </div>
                </div>
 
