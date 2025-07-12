@@ -53,35 +53,71 @@
 
 
   <style>
-      /* plus glyph for showing collapsible panels */
-      .panel-heading .accordion-plus-toggle:before {
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f068";
-        float: right;
-        color: RGBA(119, 136, 153, .5);
-      }
+    .panel-body {
+      background-color: #f6f7fb;
+    }
 
-      .panel-heading .accordion-plus-toggle.collapsed:before {
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f067";
-        color: RGBA(119, 136, 153, .5);
-      }
+    #research-topics .panel:hover {
+      box-shadow: 3px 3px 10px lightgray;
+    }
 
-      /* sets the link to the width of the entire panel title */
-      .panel-title>a {
-        display: block;
-      }
-    </style>
+    .panel-title {
+      font-weight: bold !important;
+    }
+
+    /* Make sure the panel heading has the same styling */
+    #research-topics .panel-heading {
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Style the accordion links to look like blue links */
+    #research-topics .panel-title a {
+      color: #428bca;
+      text-decoration: none;
+      display: block;
+      padding: 0;
+    }
+
+    #research-topics .panel-title a:hover {
+      text-decoration: none;
+      color: #2a6496;
+    }
+
+    #research-topics .panel-title a:focus {
+      text-decoration: none;
+      color: #2a6496;
+    }
+
+    /* plus glyph for showing collapsible panels */
+    .panel-heading .accordion-plus-toggle:before {
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f068";
+      float: right;
+      color: RGBA(119, 136, 153, .5);
+    }
+
+    .panel-heading .accordion-plus-toggle.collapsed:before {
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f067";
+      color: RGBA(119, 136, 153, .5);
+    }
+
+    /* sets the link to the width of the entire panel title */
+    .panel-title>a {
+      display: block;
+    }
+  </style>
 
 </head>
 
