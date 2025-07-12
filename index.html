@@ -84,6 +84,35 @@
       text-decoration: none;
       color: #333;
     }
+
+    /* plus glyph for showing collapsible panels */
+    .panel-heading .accordion-plus-toggle:before {
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f068";
+      float: right;
+      color: RGBA(119, 136, 153, .5);
+    }
+
+    .panel-heading .accordion-plus-toggle.collapsed:before {
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f067";
+      color: RGBA(119, 136, 153, .5);
+    }
+
+    /* sets the link to the width of the entire panel title */
+    .panel-title>a {
+      display: block;
+    }
   </style>
 
 </head>
