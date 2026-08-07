@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   /*font-family: "Open Sans", Arial, sans-serif;*/
   /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
-  font-family:Georgia, serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: #FFFFFF;
 }
 
@@ -22,7 +22,7 @@ body {
 /* Font style */
 .montserrat {
   /*font-family: "Montserrat", Helvetica, sans-serif !important;*/
-  font-family:Georgia, serif !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
 }
 
 /* Degree area -------------------------------------------------------------------- */
@@ -42,7 +42,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Montserrat", Helvetica, sans-serif;*/
-  font-family:Georgia, serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: #213d58;
   font-weight: 500;
 }
@@ -78,9 +78,9 @@ h4, h5, h6 {
 
 p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
   /*font-size: 1.5rem;*/
-  font-size: 1.53rem;
+  font-size: 1.45rem;
   /*font-family: "Montserrat", Helvetica, sans-serif;*/
-  font-family: Georgia, serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   /*font-weight: 400;*/
   font-weight: 400;
 }
@@ -163,9 +163,31 @@ iframe {
 }
 
 /* Format the nav  ---------------------------------------------------------- */
+/* was 1rem/2rem, which made an 82px bar with the wordmark sitting above centre.
+   Symmetric padding on the brand and links instead gives a 54px bar. */
 nav {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar {
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  height: auto;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.navbar-nav > li > a {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #dfe4ea;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -461,7 +483,7 @@ dd {
   font-weight: 900;
   content: "\f068";
   float: right;
-  color: silver;
+  color: #7f8c99;
 }
 
 .panel-heading .accordion-plus-toggle.collapsed:before {
@@ -477,14 +499,14 @@ dd {
   font-weight: 900;
   content: "\f078";
   float: right;
-  color: silver;
+  color: #7f8c99;
 }
 
 .panel-heading .accordion-arrow-toggle.collapsed:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f054";
-  color: silver;
+  color: #7f8c99;
 }
 
 /* sets the link to the width of the entire panel title */
@@ -514,4 +536,177 @@ dd {
 #topper:hover {
   background-color: #1585cf;
   opacity: .8;
+}
+
+/* Funding support, index.html sidebar ------------------------------------- */
+/* echoes the contact table above it: same #ddd hairline, same Georgia sizing */
+/* the 0.8rem side padding lines the chips up with the table cells above */
+#funding {
+  /* -1.2rem cancels the table's margin-bottom so the rule keeps the row rhythm */
+  margin-top: -1.2rem;
+  padding: 1.2rem 0.8rem 0 0.8rem;
+  border-top: 1px solid #ddd;
+}
+
+.funding-badges {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+/* scoped to #funding so it outranks the #main-container a rules above */
+#funding .funding-badges a {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  /* same fill as the accordion panels in the column alongside */
+  background-color: #f6f7fb;
+  border: 1px solid #e7ebf2;
+  border-radius: 2px;
+  color: #20364c;
+  font-size: 1.35rem;
+  font-weight: normal;
+  line-height: 1.5;
+  white-space: nowrap;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+#funding .funding-badges a:hover,
+#funding .funding-badges a:focus {
+  padding: 0.35rem 0.9rem;
+  background-color: #1585cf;
+  border: 1px solid #1585cf;
+  color: white;
+  text-decoration: none;
+}
+
+.funding-note {
+  margin: 1.3rem 0 0 0;
+  color: #6b7684;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Referee service list, research.html ------------------------------------- */
+/* 29 journals in one column is a wall; two columns halves the height */
+.journal-list {
+  column-count: 2;
+  column-gap: 3rem;
+}
+
+.journal-list li {
+  break-inside: avoid;
+}
+
+@media only screen and (max-width: 767px) {
+  .journal-list { column-count: 1; }
+}
+
+/* Talk list, talk.html ---------------------------------------------------- */
+/* single-line <li>s with no margin read as a wall; give each entry room */
+.talk-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.talk-list li a {
+  white-space: nowrap;
+}
+
+/* Publication filters, research.html -------------------------------------- */
+/* same chip vocabulary as the funding badges on the About page */
+#pub-filters {
+  /* sits above the Publications rule; the h3's push-down-4 makes the gap below */
+  margin: 3rem 0 0 0;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.filter-label {
+  color: #6b7684;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  width: 6.5rem;
+  flex-shrink: 0;
+}
+
+#pub-filters .pub-filter {
+  padding: 0.35rem 0.9rem;
+  background-color: #f6f7fb;
+  border: 1px solid #e7ebf2;
+  border-radius: 2px;
+  color: #20364c;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+#pub-filters .pub-filter:hover,
+#pub-filters .pub-filter:focus {
+  border-color: #1585cf;
+  color: #1585cf;
+  outline: none;
+}
+
+#pub-filters .pub-filter[aria-pressed="true"] {
+  background-color: #1585cf;
+  border-color: #1585cf;
+  color: white;
+}
+
+#pub-count {
+  color: #6b7684;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 0.6rem;
+}
+
+#pub-clear {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #1585cf;
+  font-size: 1.2rem;
+}
+
+#pub-clear:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .filter-label { width: 100%; }
+}
+
+#pub-search {
+  flex: 1 1 26rem;
+  max-width: 34rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #e7ebf2;
+  border-radius: 2px;
+  background-color: #f6f7fb;
+  color: #20364c;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+#pub-search:focus {
+  border-color: #1585cf;
+  background-color: white;
+  outline: none;
+}
+
+#pub-search::placeholder {
+  color: #8a97a3;
 }
