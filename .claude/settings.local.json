@@ -1,7 +1,24 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:arxiv.org)"
+      "WebFetch(domain:arxiv.org)",
+      "Bash(gh --version)",
+      "Bash(curl -s \"https://api.github.com/repos/yifanc96/yifanc96.github.io/actions/runs?per_page=5\")",
+      "Bash(curl -s \"https://api.github.com/repos/yifanc96/yifanc96.github.io/actions/runs/31125978292/jobs\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s \"https://api.github.com/repos/yifanc96/yifanc96.github.io/actions/runs?per_page=8\")",
+      "Bash(curl -s -o /tmp/logs.zip -w \"%{http_code}\\\\n\" -L \"https://api.github.com/repos/yifanc96/yifanc96.github.io/actions/runs/31125978292/logs\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://api.github.com/repos/yifanc96/yifanc96.github.io/check-suites/84440820158/check-runs\")",
+      "Bash(git count-objects *)",
+      "Bash(xargs -0 du -h)",
+      "Bash(curl -s https://yifanc96.github.io/)",
+      "Bash(curl -sI https://yifanc96.github.io/)",
+      "Bash(git fetch *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(curl -s https://yifanc96.github.io/footer.html)",
+      "Bash(curl -s https://yifanc96.github.io/research.html)"
     ]
   }
 }
